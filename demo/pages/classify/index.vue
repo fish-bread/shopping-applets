@@ -3,12 +3,12 @@
     <view class="content-body">
       <view class="content-body-top">
         <!--搜索-->
-        <view class="content-body-search">
+        <navigator url="/pages/search/index" class="content-body-search">
           <view class="content-body-search-svg">
             <image src="/static/搜索_search.svg" alt=""/>
           </view>
           <input class="content-body-search-input" placeholder="请输入搜索的商品"></input>
-        </view>
+        </navigator>
         <!--分类-->
         <view class="content-body-classify">
           <view class="content-body-classify-title">测试</view>
@@ -178,7 +178,7 @@
   justify-content: space-between;
   box-shadow: 0 1px 10px rgba(198,198,198,0.5)
 }
-.content-body-search {
+.content-body-search, uni-navigator {
   background-color: #dddddd;
   width: 95%;
   display: flex;

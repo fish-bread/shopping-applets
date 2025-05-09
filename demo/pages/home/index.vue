@@ -3,12 +3,14 @@
     <view class="content-body">
       <!--搜索与公告-->
       <view class="content-body-top">
+        <!--搜索-->
         <view class="content-body-search">
           <view class="content-body-search-svg">
             <image src="/static/搜索_search.svg" alt=""/>
           </view>
           <input class="content-body-search-input" placeholder="请输入搜索的商品"></input>
         </view>
+        <!--公告-->
         <view class="content-body-announcement">
           <view class="content-body-announcement-svg">
             <image src="/static/喇叭.svg" alt=""/>

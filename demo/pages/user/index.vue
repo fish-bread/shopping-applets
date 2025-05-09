@@ -13,7 +13,7 @@
           </navigator>
         </view>
         <view class="content-body-top-other">
-          <view class="content-body-top-other-collection">
+          <navigator url="/pages/collect/index" class="content-body-top-other-collection">
             <view style="font-size: 25px; color: #fff">1</view>
             <view class="content-body-top-other-collection-title">
               <view class="content-body-top-other-collection-svg">
@@ -22,8 +22,8 @@
               我的收藏
             </view>
             <view class="content-body-top-other-collection-liner"></view>
-          </view>
-          <view class="content-body-top-other-collection">
+          </navigator>
+          <navigator url="/pages/footprints/index" class="content-body-top-other-collection">
             <view style="font-size: 25px; color: #fff">2</view>
             <view class="content-body-top-other-collection-title">
               <view class="content-body-top-other-collection-svg">
@@ -31,7 +31,7 @@
               </view>
               我的足迹
             </view>
-          </view>
+          </navigator>
         </view>
       </view>
       <!--主体-->
@@ -40,7 +40,7 @@
         <view class="content-body-subject-orders">
           <view class="content-body-subject-orders-top">
             <view style="font-size: 17px">我的订单</view>
-            <button style=" all: unset;color: #999999;font-size: 13px;display: flex; align-items: center">查看更多<image style="width: 15px; height: 15px;" src="/static/1右_right.svg"></image></button>
+            <navigator url="/pages/orders/index" open-type="navigate" style=" all: unset;color: #999999;font-size: 13px;display: flex; align-items: center">查看更多<image style="width: 15px; height: 15px;" src="/static/1右_right.svg"></image></navigator>
           </view>
           <view class="content-body-subject-orders-body">
             <view class="content-body-subject-orders-status">
@@ -86,10 +86,10 @@
         </view>
         <!--其余-->
         <view class="content-body-subject-function-list">
-          <view class="content-body-subject-function">
+          <navigator url="/pages/collect/index" class="content-body-subject-function">
             <image src="/static/logo.png"></image>
             <view class="content-body-subject-function-title">我的收藏</view>
-          </view>
+          </navigator>
           <view class="content-body-subject-function">
             <image src="/static/logo.png"></image>
             <view class="content-body-subject-function-title">收货地址</view>
@@ -98,10 +98,10 @@
             <image src="/static/logo.png"></image>
             <view class="content-body-subject-function-title">绑定手机号</view>
           </view>
-          <view class="content-body-subject-function">
+          <navigator url="/pages/setting/index" class="content-body-subject-function">
             <image src="/static/logo.png"></image>
             <view class="content-body-subject-function-title">个人资料</view>
-          </view>
+          </navigator>
           <view class="content-body-subject-function">
             <image src="/static/logo.png"></image>
             <view class="content-body-subject-function-title">清除缓存</view>
@@ -254,6 +254,7 @@
   justify-content: center;
 }
 .content-body-top-other-collection {
+  all: unset;
   width: 40%;
   height: 80%;
   display: flex;
@@ -297,7 +298,8 @@
   box-sizing: border-box;
   width: 100%;
   height: 18%;
-  background-color: #ffffff;
+  background-color: #f7f7f7;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -364,6 +366,7 @@
   align-content: flex-start;
 }
 .content-body-subject-function {
+  all: unset;
   display: flex;
   flex-direction: column;
   align-items: center;
