@@ -109,6 +109,10 @@
             <image src="/static/logo.png"></image>
             <view class="content-body-subject-function-title">个人资料</view>
           </button>
+          <button v-if="isLogin === true" @click="router_merchant('商家界面')" class="content-body-subject-function">
+            <image src="/static/logo.png"></image>
+            <view class="content-body-subject-function-title">商家界面</view>
+          </button>
           <view class="content-body-subject-function">
             <image src="/static/logo.png"></image>
             <view class="content-body-subject-function-title">清除缓存</view>
@@ -129,7 +133,7 @@ import {
   router_address_index,
   router_collect,
   router_footprints,
-  router_login,
+  router_login, router_merchant,
   router_orders,
   router_setting
 } from "@/router";

@@ -1,7 +1,7 @@
 <template>
-  <other-head-index></other-head-index>
   <!--设置页面-->
-  <view class="content">
+  <view class="content">  
+    <other-head-index></other-head-index>
     <!--主体-->
     <view class="content-body">
       <!--资料-->

@@ -11,6 +11,7 @@ export const router_collect = (title = '我的收藏') => guardedNavigateTo('/pa
 export const router_footprints = (title = '历史记录') => guardedNavigateTo('/pages/footprints/index', title);
 export const router_setting = (title = '个人资料') => guardedNavigateTo('/pages/setting/index', title);
 export const router_orders = (title = '我的订单') => guardedNavigateTo('/pages/orders/index', title);
+export const router_merchant = (title = '成为商家') => guardedNavigateTo('/pages/merchant/index', title);
 //routerBack
 export const router_back = () => {
     wx.navigateBack({

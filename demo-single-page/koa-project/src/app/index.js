@@ -4,6 +4,7 @@ const cors = require('koa2-cors')
 const path = require('path');
 const serve = require('koa-static');
 const userRouter = require('../router/user.router.js')
+const merchantRouter = require('../router/merchant.router.js')
 //jwt变量
 const koaJwt = require('koa-jwt')
 const JWT_SECRET = require('../UserController')
@@ -34,10 +35,21 @@ app.use(koaBody({
         maxFileSize: 200 * 1024 * 1024 // 设置最大文件大小为 200MB
     }
 }))
-app.use(koaJwt({secret: JWT_SECRET}).unless({path: [/^\/api\/user_login_email/, /^\/api\/user_login_phone/, /^\/api\/user_sendEmail/, /^\/static/]}));
+app.use(koaJwt({secret: JWT_SECRET}).unless({path: 
+        [
+            '/api/user_login_email',
+            '/api/user_login_phone',
+            '/api/user_sendEmail',
+            '/api/merchants_captcha',
+            '/api/merchants_login',
+            '/static',
+        ],
+}));
 
 // 使用 koa-jwt 中间件验证 JWT
 //用户路由
 app.use(userRouter.routes())
 app.use(userRouter.allowedMethods())
+app.use(merchantRouter.routes())
+app.use(merchantRouter.allowedMethods())
 module.exports = app;

@@ -84,10 +84,24 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import {orders} from "@/function/orders";
+import { onMounted,watchEffect } from 'vue'
+import {orders,isOrders} from "@/function/orders";
 import OtherHeadIndex from "@/component/headComponents/otherHeadIndex.vue";
-const isOrders = ref(true)
+onMounted(()=> {
+  console.log('是否有订单', orders.value)
+  if (orders.value.length === 0) {
+    isOrders.value = false
+  } else {
+    isOrders.value = true
+  }
+})
+watchEffect(()=>{
+  if (orders.value.length === 0) {
+    isOrders.value = false
+  } else {
+    isOrders.value = true
+  }
+})
 </script>
 
 

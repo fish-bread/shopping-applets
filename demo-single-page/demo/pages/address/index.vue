@@ -1,7 +1,7 @@
 <template>
-  <other-head-index></other-head-index>
   <!--查看地址-->
   <view class="content">
+    <other-head-index></other-head-index>
     <!--地址详情-->
     <view class="content-body">
         <!--地址盒子-->
@@ -58,6 +58,7 @@ import OtherHeadIndex from "@/component/headComponents/otherHeadIndex.vue";
   flex-direction: column;
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 .content-body {
   height: 0;

@@ -1,7 +1,7 @@
 <template>
-  <other-head-index></other-head-index>
   <!--登录页面-->
-      <view class="login-page">
+      <view class="login-page"> 
+        <other-head-index></other-head-index>
         <view class="login-box">
           <view class="page-box-not-user">
             <!--logo-->

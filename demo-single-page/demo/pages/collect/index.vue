@@ -1,7 +1,7 @@
 <template>
   <!--收藏页面-->
-  <other-head-index></other-head-index>
-  <view class="content">
+  <view class="content"> 
+    <other-head-index></other-head-index>
     <view class="content-top">
       <view class="content-body-search">
         <view class="content-body-search-svg">

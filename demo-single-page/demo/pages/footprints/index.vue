@@ -1,7 +1,7 @@
 <template>
-  <other-head-index></other-head-index>
   <!--历史记录-->
   <view class="content">
+    <other-head-index></other-head-index>
     <view class="content-top">
       <view class="content-body-search">
         <view class="content-body-search-svg">

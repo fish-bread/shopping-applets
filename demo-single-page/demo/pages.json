@@ -62,6 +62,13 @@
         "navigationBarTitleText": "添加地址",
         "enablePullDownRefresh": false
       }
+    },
+    {
+      "path": "pages/merchant/index",
+      "style": {
+        "navigationBarTitleText": "成为商家",
+        "enablePullDownRefresh": false
+      }
     }
   ],
   "globalStyle": {

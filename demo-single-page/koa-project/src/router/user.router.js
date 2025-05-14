@@ -23,8 +23,8 @@ function generateVerificationCode() {
 }
 //调用
 const Router = require('@koa/router');
-const { createUser, searchUser, changeUser, deleteUser, changeUserHeadshot} = require('../service/user.service.js')
 const router = new Router();
+const { createUser, searchUser, changeUser, deleteUser, changeUserHeadshot} = require('../service/user.service.js')
 //文件存储
 const multer = require('@koa/multer');
 const syncFs = require('fs')

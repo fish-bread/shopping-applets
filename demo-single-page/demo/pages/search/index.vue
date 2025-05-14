@@ -1,7 +1,7 @@
 <template>
-  <other-head-index></other-head-index>
   <!--搜索页面-->
   <view class="content">
+    <other-head-index></other-head-index>
     <!--头部-->
     <view class="content-top">
       <!--搜索-->

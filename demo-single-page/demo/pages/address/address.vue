@@ -1,7 +1,7 @@
 <template>
-  <other-head-index></other-head-index>
   <!--添加地址-->
-  <view class="content">
+  <view class="content"> 
+    <other-head-index></other-head-index>
     <!--地址详情-->
     <view class="content-body">
       <view class="content-body-new-address">
